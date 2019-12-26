@@ -9,6 +9,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { ManagementComponent } from './components/management/management.component';
 import { HomeComponent } from './components/home/home.component';
 
+import { CategoryAddComponent } from './components/category-add/category-add.component';
+import { CategoryUpdateComponent } from './components/category-update/category-update.component';
+import { CompanyAddComponent } from './components/company-add/company-add.component';
+import { CompanyUpdateComponent } from './components/company-update/company-update.component';
+import { JobAddComponent } from './components/job-add/job-add.component';
+import { JobUpdateComponent } from './components/job-update/job-update.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +23,13 @@ import { HomeComponent } from './components/home/home.component';
     LoginComponent,
     RegisterComponent,
     ManagementComponent,
-    HomeComponent
+    HomeComponent,
+    CategoryAddComponent,
+    CategoryUpdateComponent,
+    CompanyAddComponent,
+    CompanyUpdateComponent,
+    JobAddComponent,
+    JobUpdateComponent
     
   ],
   imports: [

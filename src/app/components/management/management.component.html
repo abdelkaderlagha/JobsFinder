@@ -1,1 +1,131 @@
-management work!
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+            <button class="btn btn-info my-3" [routerLink]="['/job-add']">Add job </button>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <div     class="alert alert-warning">
+                No jobs found
+            </div>
+            <table   class="table">
+             <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Created At</th>
+                    <th>Deadline</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                   <th>Category</th>
+                    <th>Company Name</th>
+                    <th>Company Logo</th>
+                </tr>
+             </thead>
+             <tbody>
+               
+                <tr>
+                    <td>1</td>
+                    <td>12/12/2020</td>
+                    <td>31/12/2020</td>
+                    <td>Software Engineering post needed with 4 years of experience</td>
+                    <td>Engineering</td>
+                    <td>Gfi</td>
+                    <td><img src="assets/logo.png" width="100px"></td>
+                    <td>
+                        <button class="btn btn-warning mr-3" [routerLink]="['/job-update']" >Update</button>
+                        <button class="btn btn-danger" (click)="deleteProduct(i)">Delete</button>
+                    </td>
+                </tr>
+             </tbody>
+            </table>
+        </div>
+
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+
+            <button class="btn btn-info my-3" [routerLink]="['/category-add']">Add Categories</button>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <div    class="alert alert-warning">
+                No category found
+            </div>
+            <table   class="table">
+             <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    
+                    <th>Action</th>
+                </tr>
+             </thead>
+             <tbody>
+                
+                 <tr>
+                    <td>1</td>
+                    <td>Engineering</td>
+                   
+                    <td>
+                        <button class="btn btn-warning mr-3" [routerLink]="['/category-update']">Update</button>
+                        <button class="btn btn-danger" (click)="deleteCategorie(i)">Delete</button>
+                    </td>
+                </tr>
+                
+             </tbody>
+            </table>
+        </div>
+        
+
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+
+            <button class="btn btn-info my-3" [routerLink]="['/company-add']">Add Companies</button>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <div    class="alert alert-warning">
+                No companies found
+            </div>
+            <table   class="table">
+             <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Local</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                </tr>
+             </thead>
+             <tbody>
+                
+                 <tr>
+                    <td>1</td>
+                    <td>Gfi</td>
+                    <td>Berge du Lac 2</td>
+                    <td><img src="assets/logo.png" width="100px"></td>
+                
+                    <td>
+                        <button class="btn btn-warning mr-3" [routerLink]="['/company-update']">Update</button>
+                        <button class="btn btn-danger" (click)="deleteCategorie(i)">Delete</button>
+                    </td>
+                </tr>
+                
+             </tbody>
+            </table>
+        </div>
+        
+
+    </div>
+
+</div>
