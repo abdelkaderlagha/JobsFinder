@@ -41,9 +41,9 @@
     <div class="form-group">
       <label for="Role">Role</label>
       <select name="role" formControlName="role" class="form-control">
-        <option value="user">User</option>
-        <option value="admin">Admin</option>
-        <option value="pm">PM</option>
+        <option value="ROLE_USER">User</option>
+        <option value="ROLE_ADMIN">Admin</option>
+        <option value="ROLE_PM">PM</option>
       </select>
       <div class="text-danger" *ngIf="!role.valid && role.touched">
         <small *ngIf="role.errors.required">Role required</small>
