@@ -18,6 +18,7 @@ import { JobUpdateComponent } from './components/job-update/job-update.component
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterService } from './services/register.service';
+import { CompanyService } from './services/company.service';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { RegisterService } from './services/register.service';
     ToastNoAnimationModule.forRoot(),
     ToastrModule    
   ],
-  providers: [RegisterService],
+  providers: [
+  CompanyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
